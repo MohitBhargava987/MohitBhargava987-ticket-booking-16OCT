@@ -1,0 +1,13 @@
+<h2>🎬 Movies</h2>
+
+<div class="movies-container" *ngIf="movies.length; else noMovies">
+  <div *ngFor="let movie of movies" class="movie-card" (click)="viewShows(movie)">
+    <h3>{{ movie.title }}</h3>
+    <p>Genre: {{ movie.genre }}</p>
+    <p>Duration: {{ movie.duration }} min</p>
+  </div>
+</div>
+
+<ng-template #noMovies>
+  <p>No movies available.</p>
+</ng-template>

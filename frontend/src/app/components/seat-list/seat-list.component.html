@@ -1,0 +1,9 @@
+<h2>🎟️ Select Seat</h2>
+<div class="seat-container">
+  <div *ngFor="let seat of seats" class="seat" [ngClass]="{'booked': seat.status === 'booked'}" (click)="book(seat)">
+    {{ seat.seat_number }}
+  </div>
+  <div *ngIf="seats.length == 0">
+    No Seats available
+  </div>
+</div>

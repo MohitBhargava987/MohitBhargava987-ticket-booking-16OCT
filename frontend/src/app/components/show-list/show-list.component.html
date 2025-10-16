@@ -1,0 +1,9 @@
+<h2>📅 Shows</h2>
+<div *ngIf="shows.length; else noShows">
+  <div *ngFor="let show of shows" class="show-card" (click)="viewSeats(show)">
+    <p><b>Show Time:</b> {{ show.show_time | date:'medium' }}</p>
+  </div>
+</div>
+<ng-template #noShows>
+  <p>No shows available for this movie.</p>
+</ng-template>
