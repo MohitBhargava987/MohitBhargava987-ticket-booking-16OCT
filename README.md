@@ -67,6 +67,6 @@ This is the production branch: it is stable and ready to run without issues.
 
 All API CURL commands and backend documentation are available in the backend folder README.
 
-![alt text](ticket_list.png)
-![alt text](shows_list.png)
-![alt text](seats_list.png)
+![Ticket List](./ticket_list.png)
+![Shows List](./shows_list.png)
+![Seats List](./seats_list.png)
